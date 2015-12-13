@@ -1,0 +1,93 @@
+{
+"skeleton": { "hash": "m7D2hgEYVt1smIgvDxk2vktbw6U", "spine": "2.1.27", "width": 32.23, "height": 32.23, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "belly", "parent": "root", "length": 19, "x": 4.24, "y": 6.73, "rotation": 135.68 },
+	{ "name": "foot", "parent": "belly", "length": 4.75, "x": 1.44, "y": 4.76, "rotation": 107.07 },
+	{ "name": "foot2", "parent": "belly", "length": 4.3, "x": -2.43, "y": 1.81, "rotation": 102.96 },
+	{ "name": "head", "parent": "belly", "length": 4.02, "x": 16.63, "y": 0.49, "rotation": -4.5 }
+],
+"slots": [
+	{ "name": "belly", "bone": "belly", "attachment": "belly_0" },
+	{ "name": "foot", "bone": "foot", "attachment": "foot" },
+	{ "name": "head", "bone": "head", "attachment": "head" },
+	{ "name": "foot2", "bone": "foot2", "attachment": "foot" }
+],
+"skins": {
+	"default": {
+		"belly": {
+			"belly_0": { "x": 9.5, "y": -3.65, "rotation": -136.13, "width": 32, "height": 32 },
+			"belly_1": { "x": 9.5, "y": -3.65, "rotation": -135.68, "width": 32, "height": 32 },
+			"belly_2": { "x": 9.5, "y": -3.65, "rotation": -135.68, "width": 32, "height": 32 },
+			"belly_3": { "x": 9.5, "y": -3.65, "rotation": -135.68, "width": 32, "height": 32 },
+			"belly_4": { "x": 9.5, "y": -3.65, "rotation": -135.68, "width": 32, "height": 32 }
+		},
+		"foot": {
+			"foot": { "x": 2.49, "y": -0.83, "rotation": 116.79, "width": 4, "height": 5 }
+		},
+		"foot2": {
+			"foot": { "x": 1.95, "y": -0.83, "rotation": 121.35, "width": 4, "height": 5 }
+		},
+		"head": {
+			"head": { "x": 2.82, "y": 0.18, "rotation": -131.63, "width": 12, "height": 8 },
+			"head_eat": { "x": 2.86, "y": 0.26, "rotation": -131.18, "width": 12, "height": 8 }
+		}
+	}
+},
+"events": {
+	"tap": {},
+	"tip": {}
+},
+"animations": {
+	"eat": {
+		"slots": {
+			"head": {
+				"attachment": [
+					{ "time": 0, "name": "head_eat" },
+					{ "time": 0.5, "name": "head" },
+					{ "time": 1, "name": "head_eat" }
+				]
+			}
+		}
+	},
+	"fat": {
+		"slots": {
+			"belly": {
+				"attachment": [
+					{ "time": 0, "name": "belly_0" },
+					{ "time": 1, "name": "belly_1" },
+					{ "time": 2, "name": "belly_2" },
+					{ "time": 3, "name": "belly_3" },
+					{ "time": 4, "name": "belly_4" },
+					{ "time": 5, "name": "belly_0" },
+					{ "time": 6, "name": "belly_0" }
+				]
+			}
+		}
+	},
+	"walk": {
+		"bones": {
+			"foot": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1666, "angle": -15.67 },
+					{ "time": 0.5, "angle": 18.71 },
+					{ "time": 0.6666, "angle": 0 }
+				]
+			},
+			"foot2": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1666, "angle": 19.13 },
+					{ "time": 0.5, "angle": -21.35 },
+					{ "time": 0.6666, "angle": 0 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0, "name": "tip" },
+			{ "time": 0.3333, "name": "tap" }
+		]
+	}
+}
+}

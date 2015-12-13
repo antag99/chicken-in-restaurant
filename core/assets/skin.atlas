@@ -1,0 +1,164 @@
+
+skin.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+black
+  rotate: false
+  xy: 2, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+font
+  rotate: false
+  xy: 2, 278
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+glass
+  rotate: false
+  xy: 260, 260
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+lid
+  rotate: false
+  xy: 516, 758
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
+tileset
+  rotate: false
+  xy: 2, 20
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+white
+  rotate: false
+  xy: 516, 740
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+wine
+  rotate: false
+  xy: 582, 785
+  size: 12, 5
+  orig: 12, 5
+  offset: 0, 0
+  index: -1
+
+skin2.png
+size: 64,16
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+gore/body
+  rotate: false
+  xy: 2, 4
+  size: 15, 10
+  orig: 15, 10
+  offset: 0, 0
+  index: 1
+gore/body
+  rotate: false
+  xy: 19, 3
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: 2
+gore/body
+  rotate: false
+  xy: 33, 3
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: 3
+gore/body
+  rotate: false
+  xy: 47, 2
+  size: 8, 12
+  orig: 8, 12
+  offset: 0, 0
+  index: 0
+
+skin3.png
+size: 256,64
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+player/images/belly
+  rotate: false
+  xy: 2, 19
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 0
+player/images/belly
+  rotate: false
+  xy: 36, 19
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 1
+player/images/belly
+  rotate: false
+  xy: 70, 19
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 2
+player/images/belly
+  rotate: false
+  xy: 104, 19
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 3
+player/images/belly
+  rotate: false
+  xy: 138, 19
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: 4
+player/images/foot
+  rotate: false
+  xy: 2, 2
+  size: 4, 5
+  orig: 4, 5
+  offset: 0, 0
+  index: -1
+player/images/head
+  rotate: false
+  xy: 2, 9
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+player/images/head_eat
+  rotate: false
+  xy: 172, 43
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+
+skin4.png
+size: 128,64
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+food/chicken
+  rotate: false
+  xy: 2, 2
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1
