@@ -156,7 +156,7 @@ public final class GameSystem extends EntitySystem {
                             Food food = mFood.create(entity);
                             food.amount = Tuning.WINE_AMOUNT;
                             food.consumePerBite = Tuning.WINE_CONSUME_PER_SIP;
-                            mActing.create(entity).actor = new WineActor(gameScreen.game.skin.getAtlas());
+                            mActing.create(entity).actor = new WineActor(gameScreen.skin.getAtlas());
                         } else {
                             throw new RuntimeException("invalid type: " + type);
                         }

@@ -79,8 +79,11 @@ public final class PlateSystem extends EntityProcessorSystem {
                 mPlateItem.create(plate.entity).plate = entity;
                 mActing.create(plate.entity).actor = new Image(assetSystem.skin, "lid");
                 plate.counter += MathUtils.random(Tuning.LID_MIN_DURATION, Tuning.LID_MAX_DURATION);
-                if (oldEntity != -1)
+                if (oldEntity != -1) {
                     plate.amount = mFood.get(oldEntity).amount;
+                } else {
+                    plate.amount = 0f;
+                }
                 soundSystem.play(mLocation.get(entity).room,
                         platePosition.x + plateSize.width * 0.5f,
                         platePosition.y + plateSize.height * 0.5f,

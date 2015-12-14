@@ -44,15 +44,19 @@ public @SkipWire final class AssetSystem extends EntitySystem {
         }.readSkeletonData(Gdx.files.internal("player/player.json"));
         playerAnimationStateData = new AnimationStateData(playerSkeletonData);
 
-        lidOpenSound = Gdx.audio.newSound(Gdx.files.internal("lid_open.wav"));
-        lidCloseSound = Gdx.audio.newSound(Gdx.files.internal("lid_close.wav"));
-        eatSound = Gdx.audio.newSound(Gdx.files.internal("eat.wav"));
-        sipSound = Gdx.audio.newSound(Gdx.files.internal("sip.wav"));
-        tapSound = Gdx.audio.newSound(Gdx.files.internal("tap.wav"));
-        explodeSound = Gdx.audio.newSound(Gdx.files.internal("explode.wav"));
+        lidOpenSound = newSound("lid_open");
+        lidCloseSound = newSound("lid_close");
+        eatSound = newSound("eat");
+        sipSound = newSound("sip");
+        tapSound = newSound("tap");
+        explodeSound = newSound("explode");
         themeMusic = Gdx.audio.newMusic(Gdx.files.internal("theme.ogg"));
-        themeMusic.setLooping(true);
-        themeMusic.setVolume(0.05f);
-        themeMusic.play();
+        skin.add("theme", themeMusic);
+    }
+
+    public Sound newSound(String name) {
+        Sound sound = Gdx.audio.newSound(Gdx.files.internal(name + ".wav"));
+        skin.add(name, sound);
+        return sound;
     }
 }
